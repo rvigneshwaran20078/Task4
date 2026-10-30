@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fc;
+  color: #1e293b;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: #172554;
+  color: white;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 35px auto;
+}
+
+.hero {
+  background: #dbeafe;
+  padding: 35px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  color: #172554;
+  font-size: 36px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #0000000d;
+}
+
+.button,
+.secondary-button {
+  display: inline-block;
+  padding: 12px 18px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 6px;
+  background: #1d4ed8;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.secondary-button {
+  background: #475569;
+  margin-left: 10px;
+}
+
+.form-container {
+  max-width: 600px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #93c5fd;
+}
+
+.success,
+.error {
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  margin-top: 50px;
+  background: #172554;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 16px 5%;
+  }
+
+  .logo {
+    font-size: 19px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
